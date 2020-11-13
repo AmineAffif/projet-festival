@@ -18,4 +18,3 @@ Ainsi qu'un moteur de template nommé [Smarty](https://www.smarty.net/about_smar
 Page d'accueil : <br/>
 
 ![GitHub Logo](/presentation/Landing.jpg)
-Format: ![Landing Page](url)
