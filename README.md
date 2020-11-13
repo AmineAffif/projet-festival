@@ -18,4 +18,4 @@ Ainsi qu'un moteur de template nommé [Smarty](https://www.smarty.net/about_smar
 Page d'accueil : <br/>
 
 ![](/presentation/Landing.jpg)
-![Landing Page](url)
+![Landing Page](/presentation/Landing.jpg)
