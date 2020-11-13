@@ -4,6 +4,8 @@ html {
 }
 body {
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .header {
     position: relative;
@@ -51,4 +53,129 @@ body {
     object-fit: contain;
     background-position: 50% 50%;
     position: absolute;
+    margin-bottom: 100vh;
 }
+
+
+/*----------------------------section1----------------------------*/
+
+.section1 {
+    height: 100vh;
+    position: relative;
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+.section1 > * {
+    color: #151515;
+}
+.paragraph_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.vertical_stroke {
+    height: auto;
+    width: 1px;
+    background-color: #f58e9c;
+    margin-right: 7px;
+    margin-left: 12px;
+}
+.first_left .paragraph_wrapper {
+    width: 330px;
+}
+.paragraph_wrapper p {
+    margin-top: 5px;
+}
+.first_right {
+
+}
+.part_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.part_one img {
+    margin-left: 60px;
+}
+.first_right img {
+    height: 200px;
+}
+
+
+
+.part_two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.part_two img {
+    margin-right: 80px;
+}
+.part_two .first_left .paragraph_wrapper {
+    width: 315px;
+}
+
+
+
+
+.custom-shape-divider-bottom-1605294628 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1605294628 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1605294628 .shape-fill {
+    fill: #f6f6f6;
+}
+
+
+/*----------------------------section2----------------------------*/
+
+.section2 {
+    height: 100vh;
+    background-color: #6715db;
+    position: relative;
+}
+
+
+
+
+
+.custom-shape-divider-top-1605294726 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1605294726 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+}
+
+.custom-shape-divider-top-1605294726 .shape-fill {
+    fill: #f6f6f6;
+}
+
