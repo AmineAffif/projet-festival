@@ -86,6 +86,9 @@ body {
 .first_left .paragraph_wrapper {
     width: 330px;
 }
+.first_left h1 {
+    font-size: 1.6em;
+}
 .paragraph_wrapper p {
     margin-top: 5px;
 }
@@ -151,9 +154,68 @@ body {
 
 .section2 {
     height: 100vh;
-    background-color: #6715db;
     position: relative;
+    background-image: url("../assets/images/sec2_bg-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.sec2_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec2_wrapper p {
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 1.1em;
+    width: 450px;
+    margin-top: 10px;
+}
+.sec2_wrapper p:first-child {
+    font-style: italic;
+    width: 550px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+ .btn_signup_wrapper {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+ }
+.btn_signup_wrapper .btn-dark {
+    margin: 0 20px 0 20px;
+    background-color: #161616;
+    padding: 7px 16px 7px 16px ;
+ }
+.btn_signup_wrapper .btn-dark:hover {
+    background-color: #f61832;
+ }
+.left_stroke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4px;
+    width: 45vw;
+    background: linear-gradient(to right, #000000 0%,#170304 24%,#830000 51%,#ea1425 76%,#dd6590 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.right_stroke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4px;
+    width: 45vw;
+    background: linear-gradient(to right, #dd6590 0%,#ea1425 26%,#830000 51%,#170304 75%,#170304 75%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
 
 
 
@@ -179,3 +241,49 @@ body {
     fill: #f6f6f6;
 }
 
+
+
+
+/*----------------------------footer----------------------------*/
+
+footer .citation {
+    font-style: italic !important;
+}
+footer h5 {
+    margin-top: 5px;
+}
+footer img {
+    width: 30px;
+    margin-right: 10px;
+}
+.footer_sign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left_foot {
+    margin-left: 30px;
+}
+
+
+
+.custom-shape-divider-bottom-1605300780 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1605300780 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-bottom-1605300780 .shape-fill {
+    fill: #FFFFFF;
+}
