@@ -10,3 +10,12 @@ gérants du festival de suivre l'avancé des candidature.
 
 Nous utilisons un micro framework `PHP` nommé [Flight php](http://flightphp.com/learn). <br/>
 Ainsi qu'un moteur de template nommé [Smarty](https://www.smarty.net/about_smarty).
+
+
+
+# Maquettes
+
+Page d'accueil : <br/>
+
+![GitHub Logo](/presentation/Landing.jpg)
+Format: ![Landing Page](url)
