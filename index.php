@@ -14,18 +14,8 @@
 </html>
 
 <?php
-require 'flight/Flight.php';
+require './includes/flight/Flight.php';
 
-Flight::route('/', function(){
-    echo 'hello world!';
-});
+require './routes/routes.php';
 
 Flight::start();
-
-
-
-
-
-
-
-
