@@ -1,0 +1,132 @@
+/* ------------- custom adjustments -------------- */
+
+@media only screen
+and (max-device-width: 2520px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    main {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 910px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .part_one, .part_two {
+        flex-direction: column;
+        justify-content: space-between !important;
+    }
+    .part_one img, .part_two img {
+        margin: 0;
+    }
+    .part_two .first_right{
+        order: 2;
+    }
+
+
+}
+@media (max-width: 495px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .part_one, .part_two {
+        padding: 30px;
+    }
+    .part_two {
+        margin: 0;
+    }
+    .first_left h1 {
+        font-size: 1em;
+    }
+    .first_right img, .first_left img {
+        height: 110px;
+    }
+
+}
+@media (max-width: 360px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .first_right img, .first_left img {
+        height: 100px;
+    }
+}
+@media (max-width: 321px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .first_right img, .first_left img {
+        height: 75px;
+    }
+    .paragraph_wrapper p {
+        font-size: .8em;
+    }
+}
+@media (max-height: 867px){
+    .part_one, .part_two {
+        flex-direction: row;
+        justify-content: center !important;
+    }
+    .first_right img, .first_left img {
+        height: 150px;
+    }
+}
+@media (max-height: 867px) and (max-width: 770px){
+
+    .part_one, .part_two {
+        flex-direction: row;
+        justify-content: center !important;
+    }
+    .part_one, .part_two {padding: 0 30px 0 30px;
+    }
+    .paragraph_wrapper p {
+        font-size: .7em;
+    }
+    .first_left h1 {
+        font-size: 0.8em;
+    }
+}
+@media (max-height: 867px) and (max-width: 395px){
+    .first_right img, .first_left img {
+        height: 100px;
+    }
+}
+@media (max-height: 867px) and (max-width: 515px){
+    .first_right img, .first_left img {
+        height: 65px;
+    }
+    .part_one, .part_two {
+        margin: 30px 0 30px 0;
+    }
+}
+@media (max-height: 867px) and (max-width: 345px){
+    .part_one, .part_two {
+        flex-direction: column;
+    }
+}
+
+
+/* -------------------- laptop ------------------- */
+
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}
+
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    .part_one, .part_two {
+        flex-direction: column;
+    }
+    .first_right img, .first_left img {
+        height: 165px;
+    }
+}
+

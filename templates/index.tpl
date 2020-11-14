@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--linking css-->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive/indexResponsive">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
@@ -88,9 +89,15 @@
                     de ce moment unique que vous vivrez
                     avec vos plus grand fan.</p>
                 <div class="btn_signup_wrapper">
-                    <div class="left_stroke"></div>
-                    <button type="button" class="btn btn-dark">Inscription</button>
-                    <div class="right_stroke"></div>
+                    <div class="left_stroke_wrapper">
+                        <div class="left_stroke"></div>
+                    </div>
+                    <div class="btn_wrapper">
+                        <button type="button" class="btn btn-dark">Inscription</button>
+                    </div>
+                    <div class="right_stroke_wrapper">
+                        <div class="right_stroke"></div>
+                    </div>
                 </div>
             </div>
         </div>

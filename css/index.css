@@ -1,6 +1,6 @@
 /*-------------------------global style-------------------------*/
 html {
-    font-size: 13px;
+    font-size: 20px;
 }
 body {
     overflow-x: hidden;
@@ -80,11 +80,11 @@ body {
     height: auto;
     width: 1px;
     background-color: #f58e9c;
-    margin-right: 7px;
+    margin-right: 12px;
     margin-left: 12px;
 }
 .first_left .paragraph_wrapper {
-    width: 330px;
+    max-width: 470px;
 }
 .first_left h1 {
     font-size: 1.6em;
@@ -121,7 +121,7 @@ body {
     margin-right: 80px;
 }
 .part_two .first_left .paragraph_wrapper {
-    width: 315px;
+    max-width: 480px;
 }
 
 
@@ -198,20 +198,24 @@ body {
 .btn_signup_wrapper .btn-dark:hover {
     background-color: #f61832;
  }
-.left_stroke {
+.left_stroke_wrapper, .right_stroke_wrapper{
+    flex: 5;
+    width: 100vh;
+}
+.btn_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
+}
+.left_stroke {
     height: 4px;
-    width: 45vw;
+    width: 100%;
     background: linear-gradient(to right, #000000 0%,#170304 24%,#830000 51%,#ea1425 76%,#dd6590 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .right_stroke {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 4px;
-    width: 45vw;
+    width: 100%;
     background: linear-gradient(to right, #dd6590 0%,#ea1425 26%,#830000 51%,#170304 75%,#170304 75%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
