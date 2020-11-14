@@ -7,7 +7,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         overflow-x: hidden;
     }
 }
-
+/* ------SECTION1------ */
 @media (max-width: 910px)
 and (-webkit-min-device-pixel-ratio: 1) {
     .part_one, .part_two {
@@ -20,8 +20,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .part_two .first_right{
         order: 2;
     }
-
-
 }
 @media (max-width: 495px)
 and (-webkit-min-device-pixel-ratio: 1) {
@@ -96,11 +94,35 @@ and (-webkit-min-device-pixel-ratio: 1) {
         flex-direction: column;
     }
 }
+/* ------SECTION2------ */
 
-
-/* -------------------- laptop ------------------- */
-
-
+@media (max-width: 640px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .sec2_wrapper p:first-child {
+        font-size: 1.1em;
+        width: 100vw;
+        padding: 0 30px 0 30px;
+    }
+    .sec2_wrapper p {
+        font-size: 1em;
+        width: 100vw;
+        padding: 30px;
+    }
+    .sec2_wrapper * {
+        margin: 0 30px 0 30px;
+    }
+    .right_stroke, .right_stroke_wrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .left_stroke, .left_stroke_wrapper {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .btn_wrapper {
+        margin: 0;
+    }
+}
 
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
