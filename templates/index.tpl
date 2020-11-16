@@ -20,8 +20,8 @@
         <div class="nav_top">
             <div class="empty_class-top"></div>
             <div class="login_signup-wrapper">
-                <a href="#"><span>inscription</span></a>
-                <a href="#"><span class="right_span-top">connexion</span></a>
+                <a href="#"><span>Inscription</span></a>
+                <a href="#"><span class="right_span-top">Connexion</span></a>
             </div>
         </div>
         <!--landing screen image-->
@@ -30,6 +30,13 @@
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
             </svg>
+        </div>
+        <!--landing screen title-->
+        <div class="title_wrapper">
+            <div class="under_wrapper">
+                <img src="./assets/images/fav_icon_gold.png" class="logo_gold_title" alt="paradise-festival-logo">
+                <h1>PARADISE FESTIVAL</h1>
+            </div>
         </div>
     </header>
 

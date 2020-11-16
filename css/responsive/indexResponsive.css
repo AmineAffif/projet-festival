@@ -7,6 +7,52 @@ and (-webkit-min-device-pixel-ratio: 1) {
         overflow-x: hidden;
     }
 }
+/* ------LANDING SCREEN------ */
+
+@media (max-width: 970px) {
+    header h1 {
+        font-size: 7em;
+    }
+}
+@media (max-width: 885px) {
+    header h1 {
+        font-size: 5em;
+    }
+    .logo_gold_title {
+        height: 100px;
+    }
+}
+@media (max-width: 631px) {
+    header h1 {
+        font-size: 4em;
+    }
+    .logo_gold_title {
+        height: 75px;
+    }
+}
+@media (max-width: 515px) {
+    .under_wrapper {
+        flex-direction: column;
+    }
+    header h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+    .logo_gold_title {
+        height: 120px;
+        margin: 0;
+    }
+}
+@media (max-width: 415px) {
+    header h1 {
+        font-size: 3em;
+    }
+}
+
+
+
+
+
 /* ------SECTION1------ */
 @media (max-width: 910px)
 and (-webkit-min-device-pixel-ratio: 1) {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-14 13:58:24
+/* Smarty version 3.1.34-dev-7, created on 2020-11-16 13:44:05
   from 'C:\wamp64\www\projet-festival\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fafe2802e5b18_18270603',
+  'unifunc' => 'content_5fb28225ca0881_12094385',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cb3eaa98750db13f3c7251f0af39d3b619c16783' => 
     array (
       0 => 'C:\\wamp64\\www\\projet-festival\\templates\\index.tpl',
-      1 => 1605362293,
+      1 => 1605534245,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fafe2802e5b18_18270603 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb28225ca0881_12094385 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -43,8 +43,8 @@ function content_5fafe2802e5b18_18270603 (Smarty_Internal_Template $_smarty_tpl)
         <div class="nav_top">
             <div class="empty_class-top"></div>
             <div class="login_signup-wrapper">
-                <a href="#"><span>inscription</span></a>
-                <a href="#"><span class="right_span-top">connexion</span></a>
+                <a href="#"><span>Inscription</span></a>
+                <a href="#"><span class="right_span-top">Connexion</span></a>
             </div>
         </div>
         <!--landing screen image-->
@@ -53,6 +53,13 @@ function content_5fafe2802e5b18_18270603 (Smarty_Internal_Template $_smarty_tpl)
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
             </svg>
+        </div>
+        <!--landing screen title-->
+        <div class="title_wrapper">
+            <div class="under_wrapper">
+                <img src="./assets/images/fav_icon_gold.png" class="logo_gold_title" alt="paradise-festival-logo">
+                <h1>PARADISE FESTIVAL</h1>
+            </div>
         </div>
     </header>
 
