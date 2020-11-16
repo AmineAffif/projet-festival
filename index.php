@@ -14,5 +14,8 @@ Flight::register('view', 'Smarty', array(), function($smarty){
    Flight::map('render', function($template, $data){
     Flight::view()->assign($data);
     Flight::view()->display($template);
-   }); 
-Flight::start();   
+   });
+Flight::start();
+
+
+
