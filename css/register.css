@@ -22,13 +22,13 @@
     width: 100%;
 }
 
-.scene_wrapper h5 {
-}
 .scene_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: -30px !important;
+    margin-top: 25px !important;
 }
 .radio_wrapper * {
     text-align: left;
@@ -44,4 +44,37 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
+}
+.card-body{
+    padding-top: 50px !important;
+}
+.text-center > * {
+    margin: 30px 0 30px 0;
+}
+.text-center small {
+    margin: 0 !important;
+}
+#defaultRegisterFormPassword {
+    margin-bottom: 10px;
+}
+#locality-dropdown {
+    margin-top: 0;
+}
+
+#title_main_contact {
+    text-align: left;
+}
+.col{
+    padding: 0 !important;
+}
+.lft_col {
+    padding-right: 10px !important;
+}
+.rgt_col {
+    padding-left: 10px !important;
+}
+
+.mdr {
+    font-size: 10em;
+    background-color: #830000;
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-16 19:36:56
+/* Smarty version 3.1.34-dev-7, created on 2020-11-17 15:58:46
   from 'C:\wamp64\www\projet-festival\templates\resgister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fb2d4d8da4552_64174281',
+  'unifunc' => 'content_5fb3f336e2fb10_91116099',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '652894fdf1b4d752f61e8e72acf54b35f736b0ee' => 
     array (
       0 => 'C:\\wamp64\\www\\projet-festival\\templates\\resgister.tpl',
-      1 => 1605555413,
+      1 => 1605628724,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb2d4d8da4552_64174281 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb3f336e2fb10_91116099 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -50,12 +50,14 @@ function content_5fb2d4d8da4552_64174281 (Smarty_Internal_Template $_smarty_tpl)
 
 </head>
 <body>
+
+
 <header>
     <!--top navigation-->
     <div class="nav_top">
         <div class="empty_class-top"></div>
         <div class="login_signup-wrapper">
-            <a href="#"><span>Inscription</span></a>
+            <a href="#"><span></span></a>
             <a href="#"><span class="right_span-top">Connexion</span></a>
         </div>
     </div>
@@ -68,7 +70,7 @@ function content_5fb2d4d8da4552_64174281 (Smarty_Internal_Template $_smarty_tpl)
         <div class="card">
 
             <h5 class="card-header info-color white-text text-center py-4 form_top">
-                <strong>Sign up</strong>
+                <strong>S'inscrire</strong>
             </h5>
 
             <!--Card content-->
@@ -77,37 +79,17 @@ function content_5fb2d4d8da4552_64174281 (Smarty_Internal_Template $_smarty_tpl)
                 <!-- Form -->
                 <form class="text-center" style="color: #757575;" action="#!">
 
-                    <div class="form-row">
-                        <div class="col">
-                            <!-- First name -->
-                            <div class="md-form">
-                                <input type="text" id="materialRegisterFormFirstName" class="form-control">
-                                <label for="materialRegisterFormFirstName">Prénom</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <div class="md-form">
-                                <input type="email" id="materialRegisterFormLastName" class="form-control">
-                                <label for="materialRegisterFormLastName">Nom</label>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Group name -->
+                    <input type="text" id="group_name" class="form-control" placeholder="Nom du groupe">
 
                     <!-- E-mail -->
-                    <div class="md-form mt-0">
-                        <input type="email" id="materialRegisterFormEmail" class="form-control">
-                        <label for="materialRegisterFormEmail">E-mail</label>
-                    </div>
+                    <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
 
                     <!-- Password -->
-                    <div class="md-form">
-                        <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
-                        <label for="materialRegisterFormPassword">Mot de passe</label>
-                        <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                            Au moins 8 caractères
-                        </small>
-                    </div>
+                    <input type="password" id="password" class="form-control" placeholder="Mot de passe" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                        Au moins 8 caractères
+                    </small>
 
                     <div class="scene_wrapper">
                         <h5>Scene</h5>
@@ -132,20 +114,105 @@ function content_5fb2d4d8da4552_64174281 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                     </div>
 
+                    <!-- Département -->
                     <label for="locality-dropdown"></label>
                     <select id="locality-dropdown" name="student" class="form-control">
                         <option value="">Département</option>
                     </select>
 
+                    <!-- Music style -->
+                    <input type="text" id="music_style" class="form-control" placeholder="Style de musique">
+
+                    <!-- year of creation -->
+                    <input type="number" id="music_style" class="form-control" placeholder="Année de création du groupe">
+
+                    <!-- Presentation -->
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Présentation du groupe</label>
+                        <textarea class="form-control rounded-0" id="group_presentation" rows="3" placeholder="500 caractères max"></textarea>
+                    </div>
+
+                    <!-- Experiences -->
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Experiences scéniques</label>
+                        <textarea class="form-control rounded-0" id="group_experiences" rows="3" placeholder="500 caractères max"></textarea>
+                    </div>
+
+                    <!-- website_link -->
+                    <input type="text" id="website_link" class="form-control" placeholder="Site web ou page Facebook (url)">
+
+                    <!-- soundcloud_link -->
+                    <input type="text" id="soundcloud_link" class="form-control" placeholder="Chaîne Youtube (url)">
+
+                    <!-- youtube_link -->
+                    <input type="text" id="youtube_link" class="form-control" placeholder="Profil Soundcloud (url)">
+
+                    <!-- Members_group -->
+                    <!-- number -->
+
+
+
+                    <label for="number_members">Membres du groupe</label>
+                    <select id="number_members" name="student" class="form-control">
+                        <option id="number" value="1">1</option>
+                        <option id="number" value="2">2</option>
+                        <option id="number" value="3">3</option>
+                        <option id="number" value="4">4</option>
+                        <option id="number" value="5">5</option>
+                        <option id="number" value="6">6</option>
+                        <option id="number" value="7">7</option>
+                        <option id="number" value="8">8</option>
+                    </select>
+                    
+
+                    <div class="form-group">
+                        <!-- Firstname Lastname -->
+                        <div class="form-row member">
+                            <div class="col lft_col">
+                                <!-- First name -->
+                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
+                            </div>
+                            <div class="col rgt_col">
+                                <!-- Last name -->
+                                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <h5 id="title_main_contact">Représentant du groupe</h5>
+
+                    <!-- Firstname Lastname -->
+                    <div class="form-row">
+                        <div class="col lft_col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
+                        </div>
+                        <div class="col rgt_col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
+                        </div>
+                    </div>
+                    <!-- Adresse -->
+                    <input type="text" id="adresse" class="form-control" placeholder="Adresse">
+                    <!-- City -->
+                    <input type="text" id="city" class="form-control" placeholder="Ville">
+
+                    <!-- postal code -->
+                    <input type="text" id="postal_code" class="form-control" placeholder="Code postal">
+
+                    <!-- phone number -->
+                    <input type="tel" id="city" class="form-control" placeholder="Numéro de téléphone">
+
+
+
 
                     <!-- Sign up button -->
-                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Valider</button>
 
-
-                    <!-- Terms of service -->
-                    <p>By clicking
-                        <em>Sign up</em> you agree to our
-                        <a href="" target="_blank">terms of service</a>
 
                 </form>
                 <!-- Form -->
@@ -212,11 +279,17 @@ function content_5fb2d4d8da4552_64174281 (Smarty_Internal_Template $_smarty_tpl)
 
 </footer>
 
+</body>
+
+<?php echo '<script'; ?>
+ src="./javascript/cityListing"><?php echo '</script'; ?>
+>
 <?php echo '<script'; ?>
  src="./javascript/departementListing"><?php echo '</script'; ?>
 >
-</body>
+
 </html>
+
 
 <?php }
 }
