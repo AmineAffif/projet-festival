@@ -25,12 +25,14 @@ function generateMemberForm(selectObject) {
     var optionSelectedValue = selectObject.value;
 
     for (var i = 1; i <= optionSelectedValue; i++) {
-        var identificationGlobal = "member " + i;
+        var identificationGlobal = "memberGlobal member" + i;
         var identificationFirstName = "firstnameMember" + i;
         var identificationLastName = "lastnameMember" + i;
+        var identificationInstrument = "instrumentMember" + i;
         $("#memberWrapper").append(html);
         document.getElementById("mb").id = identificationGlobal;
         document.getElementById("IDFirstName").id = identificationFirstName;
         document.getElementById("IDLastName").id = identificationLastName;
+        document.getElementById("instrument").id = identificationInstrument;
     }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-18 19:10:11
+/* Smarty version 3.1.34-dev-7, created on 2020-11-18 20:30:51
   from 'C:\wamp64\www\projet-festival\templates\resgister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fb57193b2efe0_43662250',
+  'unifunc' => 'content_5fb5847b89c903_79697622',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '652894fdf1b4d752f61e8e72acf54b35f736b0ee' => 
     array (
       0 => 'C:\\wamp64\\www\\projet-festival\\templates\\resgister.tpl',
-      1 => 1605726577,
+      1 => 1605731419,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb5847b89c903_79697622 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -91,28 +91,7 @@ function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl)
                         Au moins 8 caractères
                     </small>
 
-                    <div class="scene_wrapper">
-                        <h5>Scene</h5>
-                        <div class="radio_wrapper">
-                            <!-- Group of default radios - option 1 -->
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios" checked>
-                                <label class="custom-control-label" for="defaultGroupExample1">Tribute</label>
-                            </div>
 
-                            <!-- Group of default radios - option 2 -->
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
-                                <label class="custom-control-label" for="defaultGroupExample2">Acoustique/Folk</label>
-                            </div>
-
-                            <!-- Group of default radios - option 3 -->
-                            <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
-                                <label class="custom-control-label" for="defaultGroupExample3">Amplifié/Rock</label>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Département -->
                     <label for="locality-dropdown"></label>
@@ -122,6 +101,31 @@ function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl)
 
                     <!-- Music style -->
                     <input type="text" id="music_style" class="form-control" placeholder="Style de musique">
+
+
+                    <!-- Choose scene -->
+                    <div class="radio_wrapper_global scene_wrap">
+                        <h5>Scene</h5>
+                        <div class="radio_wrapper_scene">
+                            <!-- Group of default radios - option 1 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="Tribute" name="scene" checked>
+                                <label class="custom-control-label" for="Tribute">Tribute</label>
+                            </div>
+
+                            <!-- Group of default radios - option 2 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="Acoustique" name="scene">
+                                <label class="custom-control-label" for="Acoustique">Acoustique/Folk</label>
+                            </div>
+
+                            <!-- Group of default radios - option 3 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="Amplifié" name="scene">
+                                <label class="custom-control-label" for="Amplifié">Amplifié/Rock</label>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- year of creation -->
                     <input type="number" id="creation_year" class="form-control" placeholder="Année de création du groupe">
@@ -149,11 +153,8 @@ function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl)
 
                     <!-- Members_group -->
                     <!-- number -->
-
-
-
-                    <label for="number_members" on>Membres du groupe</label>
-                    <select id="number_members" name="student" class="form-control" onchange="generateMemberForm(this)">
+                    <label for="number_members">Membres du groupe</label>
+                    <select id="number_members" name="student" class="form-control" onfocus="generateMemberForm(this)" onchange="generateMemberForm(this)">
                         <option class="ae" value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -163,18 +164,139 @@ function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl)
                         <option value="7">7</option>
                         <option value="8">8</option>
                     </select>
-
                     <div id="memberWrapper">
+                    </div>
 
+
+                    <!-- Choose_associatif -->
+                    <div class="radio_wrapper_global">
+                        <h5>Status associatif</h5>
+                        <div class="radio_wrapper_status">
+                            <!-- Group of default radios - option 1 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="status_oui" name="status" >
+                                <label class="custom-control-label" for="status_oui">Oui</label>
+                            </div>
+
+                            <!-- Group of default radios - option 2 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="status_non" name="status" checked>
+                                <label class="custom-control-label" for="status_non">Non</label>
+                            </div>
+                            </div>
+                        </div>
+
+                    <!-- Choose_sacem -->
+                    <div class="radio_wrapper_global">
+                        <h5>Sacem</h5>
+                        <div class="radio_wrapper_sacem">
+                            <!-- Group of default radios - option 1 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="sacem_oui" name="sacem" >
+                                <label class="custom-control-label" for="sacem_oui">Oui</label>
+                            </div>
+
+                            <!-- Group of default radios - option 2 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="sacem_non" name="sacem" checked>
+                                <label class="custom-control-label" for="sacem_non">Non</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Choose_producteur -->
+                    <div class="radio_wrapper_global">
+                        <h5>Producteur</h5>
+                        <div class="radio_wrapper radio_wrapper_producteur">
+                            <!-- Group of default radios - option 1 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="producteur_oui" name="producteur" checked>
+                                <label class="custom-control-label" for="producteur_oui">Oui</label>
+                            </div>
+
+                            <!-- Group of default radios - option 2 -->
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="producteur_non" name="producteur">
+                                <label class="custom-control-label" for="producteur_non">Non</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 3 mp3 Files -->
+                    <div class="imput_mp3">
+                        <h5 id="title_main">Chansons du groupe</h5>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="fileToUpload1"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Chanson format mp3</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="fileToUpload2"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Chanson format mp3</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="fileToUpload3"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Chanson format mp3</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1 pdf File Dossier de presse -->
+                    <div class="imput_pdf">
+                        <h5 id="title_main">Dossier de presse</h5>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="pdf_dossier_de_presse_ToUpload1"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="pdf_dossier_de_presse_ToUpload1">format pdf</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 images Files -->
+                    <div class="imput_image">
+                        <h5 id="title_main">Photos</h5>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="photoToUpload1"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="photoToUpload1">Résolution > 300 dpi</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="photoToUpload2"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="photoToUpload2">Résolution > 300 dpi</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 1 pdf File fiche technique -->
+                    <div class="imput_fiche_technique">
+                        <h5 id="title_main">Fiche technique</h5>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="pdf_fiche_techniqueToUpload1"
+                                       aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="pdf_fiche_techniqueToUpload1">format pdf</label>
+                            </div>
+                        </div>
                     </div>
 
 
 
 
 
-
-
-                    <h5 id="title_main_contact">Représentant du groupe</h5>
+                    <h5 id="title_main">Représentant du groupe</h5>
 
                     <!-- Firstname Lastname -->
                     <div class="form-row">
@@ -209,6 +331,8 @@ function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl)
                 <!-- Form -->
 
             </div>
+
+        </div>
 
         </div>
         <!-- Material form register -->
