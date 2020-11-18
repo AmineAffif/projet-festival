@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-17 15:58:46
+/* Smarty version 3.1.34-dev-7, created on 2020-11-18 18:41:53
   from 'C:\wamp64\www\projet-festival\templates\resgister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fb3f336e2fb10_91116099',
+  'unifunc' => 'content_5fb56af1b4c477_20061939',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '652894fdf1b4d752f61e8e72acf54b35f736b0ee' => 
     array (
       0 => 'C:\\wamp64\\www\\projet-festival\\templates\\resgister.tpl',
-      1 => 1605628724,
+      1 => 1605724911,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb3f336e2fb10_91116099 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb56af1b4c477_20061939 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -124,7 +124,7 @@ function content_5fb3f336e2fb10_91116099 (Smarty_Internal_Template $_smarty_tpl)
                     <input type="text" id="music_style" class="form-control" placeholder="Style de musique">
 
                     <!-- year of creation -->
-                    <input type="number" id="music_style" class="form-control" placeholder="Année de création du groupe">
+                    <input type="number" id="creation_year" class="form-control" placeholder="Année de création du groupe">
 
                     <!-- Presentation -->
                     <div class="form-group">
@@ -153,31 +153,21 @@ function content_5fb3f336e2fb10_91116099 (Smarty_Internal_Template $_smarty_tpl)
 
 
                     <label for="number_members">Membres du groupe</label>
-                    <select id="number_members" name="student" class="form-control">
-                        <option id="number" value="1">1</option>
-                        <option id="number" value="2">2</option>
-                        <option id="number" value="3">3</option>
-                        <option id="number" value="4">4</option>
-                        <option id="number" value="5">5</option>
-                        <option id="number" value="6">6</option>
-                        <option id="number" value="7">7</option>
-                        <option id="number" value="8">8</option>
+                    <select id="number_members" name="student" class="form-control" onchange="generateMemberForm(this)">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
                     </select>
-                    
 
-                    <div class="form-group">
-                        <!-- Firstname Lastname -->
-                        <div class="form-row member">
-                            <div class="col lft_col">
-                                <!-- First name -->
-                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
-                            </div>
-                            <div class="col rgt_col">
-                                <!-- Last name -->
-                                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
-                            </div>
-                        </div>
+                    <div id="memberWrapper">
                     </div>
+
+
 
 
 
@@ -281,11 +271,12 @@ function content_5fb3f336e2fb10_91116099 (Smarty_Internal_Template $_smarty_tpl)
 
 </body>
 
-<?php echo '<script'; ?>
- src="./javascript/cityListing"><?php echo '</script'; ?>
->
+
 <?php echo '<script'; ?>
  src="./javascript/departementListing"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="./javascript/groupMemberFormLoop"><?php echo '</script'; ?>
 >
 
 </html>

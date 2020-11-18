@@ -99,7 +99,7 @@
                     <input type="text" id="music_style" class="form-control" placeholder="Style de musique">
 
                     <!-- year of creation -->
-                    <input type="number" id="music_style" class="form-control" placeholder="Année de création du groupe">
+                    <input type="number" id="creation_year" class="form-control" placeholder="Année de création du groupe">
 
                     <!-- Presentation -->
                     <div class="form-group">
@@ -128,31 +128,21 @@
 
 
                     <label for="number_members">Membres du groupe</label>
-                    <select id="number_members" name="student" class="form-control">
-                        <option id="number" value="1">1</option>
-                        <option id="number" value="2">2</option>
-                        <option id="number" value="3">3</option>
-                        <option id="number" value="4">4</option>
-                        <option id="number" value="5">5</option>
-                        <option id="number" value="6">6</option>
-                        <option id="number" value="7">7</option>
-                        <option id="number" value="8">8</option>
+                    <select id="number_members" name="student" class="form-control" onchange="generateMemberForm(this)">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
                     </select>
-                    
 
-                    <div class="form-group">
-                        <!-- Firstname Lastname -->
-                        <div class="form-row member">
-                            <div class="col lft_col">
-                                <!-- First name -->
-                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Prénom">
-                            </div>
-                            <div class="col rgt_col">
-                                <!-- Last name -->
-                                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Nom">
-                            </div>
-                        </div>
+                    <div id="memberWrapper">
                     </div>
+
+
 
 
 
@@ -256,8 +246,9 @@
 
 </body>
 
-<script src="./javascript/cityListing"></script>
+
 <script src="./javascript/departementListing"></script>
+<script src="./javascript/groupMemberFormLoop"></script>
 
 </html>
 
