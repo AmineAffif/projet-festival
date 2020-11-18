@@ -24,7 +24,7 @@
 
 
 </head>
-<body>
+<body onload="">
 
 
 <header>
@@ -127,9 +127,9 @@
 
 
 
-                    <label for="number_members">Membres du groupe</label>
+                    <label for="number_members" on>Membres du groupe</label>
                     <select id="number_members" name="student" class="form-control" onchange="generateMemberForm(this)">
-                        <option value="1">1</option>
+                        <option class="ae" value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -140,6 +140,7 @@
                     </select>
 
                     <div id="memberWrapper">
+
                     </div>
 
 

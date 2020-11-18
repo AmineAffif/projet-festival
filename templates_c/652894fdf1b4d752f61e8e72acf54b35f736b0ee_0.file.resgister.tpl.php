@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-18 18:41:53
+/* Smarty version 3.1.34-dev-7, created on 2020-11-18 19:10:11
   from 'C:\wamp64\www\projet-festival\templates\resgister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fb56af1b4c477_20061939',
+  'unifunc' => 'content_5fb57193b2efe0_43662250',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '652894fdf1b4d752f61e8e72acf54b35f736b0ee' => 
     array (
       0 => 'C:\\wamp64\\www\\projet-festival\\templates\\resgister.tpl',
-      1 => 1605724911,
+      1 => 1605726577,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb56af1b4c477_20061939 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb57193b2efe0_43662250 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -49,7 +49,7 @@ function content_5fb56af1b4c477_20061939 (Smarty_Internal_Template $_smarty_tpl)
 
 
 </head>
-<body>
+<body onload="">
 
 
 <header>
@@ -152,9 +152,9 @@ function content_5fb56af1b4c477_20061939 (Smarty_Internal_Template $_smarty_tpl)
 
 
 
-                    <label for="number_members">Membres du groupe</label>
+                    <label for="number_members" on>Membres du groupe</label>
                     <select id="number_members" name="student" class="form-control" onchange="generateMemberForm(this)">
-                        <option value="1">1</option>
+                        <option class="ae" value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
@@ -165,6 +165,7 @@ function content_5fb56af1b4c477_20061939 (Smarty_Internal_Template $_smarty_tpl)
                     </select>
 
                     <div id="memberWrapper">
+
                     </div>
 
 
