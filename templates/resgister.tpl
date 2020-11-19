@@ -39,7 +39,11 @@
 </header>
 
 <main>
-
+    <div class="stars_wrapper">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
     <div class="main_wrap">
         <!-- Material form register -->
         <div class="card">
@@ -107,13 +111,13 @@
 
                     <!-- Presentation -->
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Présentation du groupe</label>
+                        <label for="group_presentation">Présentation du groupe</label>
                         <textarea class="form-control rounded-0" id="group_presentation" rows="3" placeholder="500 caractères max"></textarea>
                     </div>
 
                     <!-- Experiences -->
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Experiences scéniques</label>
+                        <label for="group_experiences">Experiences scéniques</label>
                         <textarea class="form-control rounded-0" id="group_experiences" rows="3" placeholder="500 caractères max"></textarea>
                     </div>
 
@@ -167,13 +171,13 @@
                         <div class="radio_wrapper_sacem">
                             <!-- Group of default radios - option 1 -->
                             <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="sacem_oui" name="sacem" >
+                                <input type="radio" class="custom-control-input" id="sacem_oui" name="sacem" checked>
                                 <label class="custom-control-label" for="sacem_oui">Oui</label>
                             </div>
 
                             <!-- Group of default radios - option 2 -->
                             <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="sacem_non" name="sacem" checked>
+                                <input type="radio" class="custom-control-input" id="sacem_non" name="sacem">
                                 <label class="custom-control-label" for="sacem_non">Non</label>
                             </div>
                         </div>
@@ -202,23 +206,23 @@
                         <h5 id="title_main">Chansons du groupe</h5>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="fileToUpload1"
+                                <input type="file" class="custom-file-input" id="song1"
                                        aria-describedby="inputGroupFileAddon01">
-                                <label class="custom-file-label" for="inputGroupFile01">Chanson format mp3</label>
+                                <label class="custom-file-label" for="song1">Chanson format mp3</label>
                             </div>
                         </div>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="fileToUpload2"
+                                <input type="file" class="custom-file-input" id="song2"
                                        aria-describedby="inputGroupFileAddon01">
-                                <label class="custom-file-label" for="inputGroupFile01">Chanson format mp3</label>
+                                <label class="custom-file-label" for="song2">Chanson format mp3</label>
                             </div>
                         </div>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="fileToUpload3"
+                                <input type="file" class="custom-file-input" id="song3"
                                        aria-describedby="inputGroupFileAddon01">
-                                <label class="custom-file-label" for="inputGroupFile01">Chanson format mp3</label>
+                                <label class="custom-file-label" for="song3">Chanson format mp3</label>
                             </div>
                         </div>
                     </div>

@@ -5,4 +5,7 @@ Flight::route('/', function(){
 Flight::route('/inscription', function(){
     Flight::view()->display("resgister.tpl");
 });
+Flight::route('/connexion', function(){
+    Flight::view()->display("login.tpl");
+});
 ?>
