@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-19 21:14:40
+/* Smarty version 3.1.34-dev-7, created on 2020-11-19 21:22:26
   from 'C:\wamp64\www\projet-festival\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fb6e040bc5443_39506179',
+  'unifunc' => 'content_5fb6e212888142_52897551',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4f0371f61b92256dd2250374bada932f58d57c28' => 
     array (
       0 => 'C:\\wamp64\\www\\projet-festival\\templates\\login.tpl',
-      1 => 1605820464,
+      1 => 1605820943,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb6e040bc5443_39506179 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb6e212888142_52897551 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -72,7 +72,7 @@ function content_5fb6e040bc5443_39506179 (Smarty_Internal_Template $_smarty_tpl)
                     <article class="card-body">
                         <h4 class="card-title text-center mb-4 mt-1">Connexion</h4>
                         <hr>
-                        <p class="text-success text-center">Bon retour parmis nous</p>
+                        <p class="text-success text-center">Bon retour parmis nous &#128540</p>
                         <form>
                             <div class="form-group">
                                 <div class="input-group">

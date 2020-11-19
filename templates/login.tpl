@@ -49,7 +49,7 @@
                     <article class="card-body">
                         <h4 class="card-title text-center mb-4 mt-1">Connexion</h4>
                         <hr>
-                        <p class="text-success text-center">Bon retour parmis nous</p>
+                        <p class="text-success text-center">Bon retour parmis nous &#128540</p>
                         <form>
                             <div class="form-group">
                                 <div class="input-group">
