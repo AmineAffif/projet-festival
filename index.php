@@ -5,6 +5,8 @@ require 'includes/Smarty/libs/Smarty.class.php';
 
 require "routes/routes.php";
 
+require "../includes/pdo.php";
+
 
 Flight::register('view', 'Smarty', array(), function($smarty){
     $smarty->template_dir = './templates/';

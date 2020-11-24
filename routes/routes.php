@@ -1,10 +1,29 @@
 <?php
+
+require "../includes/pdo.php";
+
 Flight::route('/', function(){
     Flight::view()->display("index.tpl");
    });
-Flight::route('/inscription', function(){
+
+
+
+Flight::route('GET /inscription', function(){
     Flight::view()->display("resgister.tpl");
 });
+
+Flight::route('POST /inscription', function(){
+    Flight::view()->display("resgister.tpl");
+});
+
+
+
+
+
+
+
+
+
 Flight::route('/connexion', function(){
     Flight::view()->display("login.tpl");
 });
