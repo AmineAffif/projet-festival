@@ -8,4 +8,10 @@ Flight::route('/inscription', function(){
 Flight::route('/connexion', function(){
     Flight::view()->display("login.tpl");
 });
+Flight::route('/dashboardArtist', function(){
+    Flight::view()->display("dashboardArtist.tpl");
+});
+Flight::route('/dashboardAdmin', function(){
+    Flight::view()->display("dashboardAdmin.tpl");
+});
 ?>
