@@ -56,7 +56,7 @@
             <div class="card-body px-lg-5 pt-0">
 
                 <!-- Form -->
-                <form class="text-center" style="color: #757575;" action="#!">
+                <form class="text-center" style="color: #757575;" action="POST">
 
                     <!-- Group name -->
                     <input type="text" id="group_name" class="form-control" placeholder="Nom du groupe">
@@ -88,7 +88,7 @@
                         <div class="radio_wrapper_scene">
                             <!-- Group of default radios - option 1 -->
                             <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="Tribute" name="scene" checked>
+                                <input type="radio" class="custom-control-input" id="Tribute" name="scene" >
                                 <label class="custom-control-label" for="Tribute">Tribute</label>
                             </div>
 
@@ -107,7 +107,8 @@
                     </div>
 
                     <!-- year of creation -->
-                    <input type="number" id="creation_year" class="form-control" placeholder="Année de création du groupe">
+                    <input type="date" id="creation_year" class="form-control" placeholder="Année de création du groupe"
+                        min="1950-01-01" max="2020-12-21">
 
                     <!-- Presentation -->
                     <div class="form-group">
@@ -149,7 +150,7 @@
 
                     <!-- Choose_associatif -->
                     <div class="radio_wrapper_global">
-                        <h5>Status associatif</h5>
+                        <h5>Statut associatif</h5>
                         <div class="radio_wrapper_status">
                             <!-- Group of default radios - option 1 -->
                             <div class="custom-control custom-radio">

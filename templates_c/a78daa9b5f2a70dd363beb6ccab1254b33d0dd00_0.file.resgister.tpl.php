@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-11-24 20:27:04
+/* Smarty version 3.1.34-dev-7, created on 2020-12-06 05:37:52
   from 'C:\laragon\www\projet-festival\templates\resgister.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5fbd6c9858cec7_89586721',
+  'unifunc' => 'content_5fcc6e30f08c34_53488203',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a78daa9b5f2a70dd363beb6ccab1254b33d0dd00' => 
     array (
       0 => 'C:\\laragon\\www\\projet-festival\\templates\\resgister.tpl',
-      1 => 1606249209,
+      1 => 1607232236,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fbd6c9858cec7_89586721 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fcc6e30f08c34_53488203 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -81,7 +81,7 @@ function content_5fbd6c9858cec7_89586721 (Smarty_Internal_Template $_smarty_tpl)
             <div class="card-body px-lg-5 pt-0">
 
                 <!-- Form -->
-                <form class="text-center" style="color: #757575;" action="#!">
+                <form class="text-center" style="color: #757575;" action="POST">
 
                     <!-- Group name -->
                     <input type="text" id="group_name" class="form-control" placeholder="Nom du groupe">
@@ -113,7 +113,7 @@ function content_5fbd6c9858cec7_89586721 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="radio_wrapper_scene">
                             <!-- Group of default radios - option 1 -->
                             <div class="custom-control custom-radio">
-                                <input type="radio" class="custom-control-input" id="Tribute" name="scene" checked>
+                                <input type="radio" class="custom-control-input" id="Tribute" name="scene" >
                                 <label class="custom-control-label" for="Tribute">Tribute</label>
                             </div>
 
@@ -132,7 +132,8 @@ function content_5fbd6c9858cec7_89586721 (Smarty_Internal_Template $_smarty_tpl)
                     </div>
 
                     <!-- year of creation -->
-                    <input type="number" id="creation_year" class="form-control" placeholder="Année de création du groupe">
+                    <input type="date" id="creation_year" class="form-control" placeholder="Année de création du groupe"
+                        min="1950-01-01" max="2020-12-21">
 
                     <!-- Presentation -->
                     <div class="form-group">
@@ -174,7 +175,7 @@ function content_5fbd6c9858cec7_89586721 (Smarty_Internal_Template $_smarty_tpl)
 
                     <!-- Choose_associatif -->
                     <div class="radio_wrapper_global">
-                        <h5>Status associatif</h5>
+                        <h5>Statut associatif</h5>
                         <div class="radio_wrapper_status">
                             <!-- Group of default radios - option 1 -->
                             <div class="custom-control custom-radio">
