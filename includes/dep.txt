@@ -6,7 +6,7 @@
 6;Alpes-Maritimes
 7;Ardeche
 8;Ardennes
-9;AriÃ¨ge
+9;Ariege
 10;Aube
 11;Aude
 12;Aveyron
