@@ -80,7 +80,7 @@ Flight::route('POST /inscription', function(){
     if(empty($_POST['experience'])){
         $messages['experience']="le champ est obligatoire";
     }
-    elseif(strlen($_POST['presentation']) >= 500){
+    elseif(strlen($_POST['experience']) >= 500){
         $messages['experience']="500 caractère max";
     }
 
@@ -224,9 +224,21 @@ Flight::route('POST /inscription', function(){
         }
         }
 
-                 
-
-
+if(!empty($messages)){
+    Flight::view()->assign("titre","inscription");         
+    // Passer les variable à la vu
+    Flight::view()->assign("message",$messages);
+    Flight::view()->assign($_POST);
+    //pré remplir les champs qui avaient déjà été saisis (sauf le mot de passe)
+    Flight::render("register.tpl",$_POST);        
+    //Afficher à nouveau le formualire
+    Flight::view()->display("register.tpl");}
+else {
+    //insérer dans la base de données et faire une redirection vers /success     
+    $db = Flight::get('festival');
+    $st = $db->prepare("INSERT INTO candidature VALUES (:nomdugroupe,:email,:mdp)");
+    $st->execute(array(':nomdugroupe'=>($_POST['nomdugroupe']),':email'=>($_POST['email']),':mdp'=>$hash));         
+}
 });
 
 
